@@ -20,10 +20,10 @@
                 <lottie v-if="isLike" :options="likeLottie" :height="165" :width="165"/>
                 <lottie v-if="isUnlike" :options="unlikeLottie" :height="165" :width="165"/>
             </div>
-            <div class="col-12 mt-5">
+            <div class="col-12 mt-5 mb-2">
                 <div class="fixed-bottom px-5">
                     <h2 v-if="lastItem !== index"><i class="fa fa-angle-up"></i></h2>
-                    <h6 class="font-weight-light">Created by <a class="text-white" href="https://twitter.com/perogeremmer">Mr.Software Engineer (@perogeremmer)</a> using VueJS, Laravel, and Lottie ♥</h6>
+                    <h6 v-if="lastItem === index"class="font-weight-light">Created by <a class="text-white" href="https://twitter.com/perogeremmer">Mr.Software Engineer (@perogeremmer)</a> using VueJS, Laravel, and Lottie ♥</h6>
                 </div>
             </div>
         </div>
